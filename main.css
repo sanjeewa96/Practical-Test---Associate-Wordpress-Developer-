@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    padding: 0!important;
+    margin: 0!important;
+    font-family: 'Poppins', Arial, sans-serif !important;
+}
+
+
+.header{
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.header-btn{
+    background-color: #18191C!important;
+    color: #fff!important;
+    border: none!important;
+    border-radius: 40px!important;
+}
+
+.dark-btn{
+    background-color: #18191C!important;
+    color: #fff!important;
+    border: none!important;
+    border-radius: 40px!important;
+}
+
+.light-btn{
+    background-color: #ffffff!important;
+    color: #18191C!important;
+    border: none!important;
+    border-radius: 40px!important;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.large-logo{
+    display: none;
+}
+
+.mobile-logo{
+    display: block;
+}
+
+
+.section-introduction{
+    background-image: url(./assets/Ellipse\ 2827.svg);
+    background-position: center;
+    min-height: 80vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 80px 0;    
+}
+
+.section-introduction .container:first-of-type{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-header{
+    font-size: 115px;
+}
+
+.section-introduction .hero-first-column{
+    font-weight: 600;
+    font-size: 24px;
+    padding-right: 168px;
+}
+
+.section-introduction .hero-second-column{
+    font-size: 24px;
+    padding-right: 68px;
+}
+
+@media only screen and (max-width:767px) {
+    .large-logo{
+        display: block!important;
+    }
+    .mobile-logo{
+        display: none!important;
+    }
+    
+}
