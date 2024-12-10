@@ -3,7 +3,6 @@ body{
     padding: 0!important;
     margin: 0!important;
     font-family: 'Poppins', Arial, sans-serif !important;
-    max-width: 100%!important;
 }
 
 
@@ -81,23 +80,67 @@ body{
     padding-right: 68px;
 }
 
+.features-section{
+    background-image: url(./assets/Group\ 1171275313.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.timeline-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .step-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e5e5e5;
+    text-align: center;
+    width: 50px;
+  }
+  
+  .step-number.active {
+    color: #000;
+  }
+  
+  .vertical-line {
+    width: 20px;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .vertical-line .line {
+    width: 2px;
+    height: 103px;
+    margin: 0 auto;
+    background: #ECEEF3;
+  }
+  
+  .vertical-line .line.active {
+    background-color: #CC41E4;
+  }
+  
+  .timeline-content {
+    padding-left: 20px;
+  }
+  
+  h3.step-title {
+    font-size: 18px!important;
+    font-weight: bold;
+    color: #18191C;
+    text-align: left;
+  }
+  
+  .step-title.active {
+    color: #b31aef;
+  }
+  
+  .step-description {
+    font-size: 14px;
+    color: #666;
+  }
 
 
 
@@ -111,7 +154,7 @@ body{
 
 h3{
     text-align: center;
-    font-size: 80px!important;
+    font-size: 70px!important;
 }
 
 .plan-sub-text{
@@ -192,9 +235,10 @@ footer{
     display: flex;
     flex-direction: column;
     background-image: url(./assets/footerBg.png);
-    background-position: left center;
+    background-position: left top;
     background-repeat: no-repeat;
     padding: 200px 0 50px 0;
+    background-size: cover;
 }
 
 .footer-nav{
@@ -203,7 +247,7 @@ footer{
     justify-content: center;
 }
 
-ul li:first-child {
+ul li {
     list-style: none; 
 }
 
@@ -215,6 +259,7 @@ ul li:first-child {
 
 .form-container {
     max-width: 400px;
+    width: 400px;
     margin: 50px auto;
     position: relative;
 }
@@ -239,10 +284,10 @@ ul li:first-child {
     position: absolute;
     right: 0;
     top: 0;
-    height: 100%;
+    height: 0;
     width: 40px;
     background: none;
-    border: 1px solid #666;
+    border: none;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -251,10 +296,18 @@ ul li:first-child {
     transition: 0.3s;
 }
 
-.form-container button:hover {
+.form-img{
+    width: 50px;
+}
+
+.form-img:hover{
+    transform: scale(1.1);
+}
+
+/* .form-container button:hover {
     background-color: #6a0dad; 
     border-color: #6a0dad;
-}
+} */
 
 .form-container button i {
     color: #ccc; 
@@ -286,13 +339,16 @@ ul li:first-child {
     .section-introduction .hero-first-column{
         font-size: 20px;
         text-align: center;
-        padding-right: 0px;
+        padding:10px;
     }
     
     .section-introduction .hero-second-column{
         font-size: 20px;
         text-align: center;
-        padding-right: 0;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .plan-price{
         padding: 30px 0;
@@ -303,10 +359,17 @@ ul li:first-child {
     .plan-sub-text{
         padding: 0!important;
     }
+    .footer-nav{
+        flex-direction: column;
+        align-items: center;
+    }
     
 }
 
 @media only screen and (max-width:767px) {
+    .plan-feature-row{
+        padding: 10px;
+    }
     .section-introduction {
         padding: 0!important;
         margin: 30px 0;
@@ -322,6 +385,25 @@ ul li:first-child {
     
     .section-introduction .hero-second-column{
         font-size: 16px;
+    }
+    .form-container {
+
+        width: 200px;
+    }
+    
+    .form-container input[type="email"]::placeholder {
+        
+        font-size: 20px;
+    }
+    .form-container button i {
+        
+        font-size: 30px!important;
+    }
+    .form-container button {
+        top: 20px;
+    }
+    .form-img {
+        width: 36px;
     }
 
 }
