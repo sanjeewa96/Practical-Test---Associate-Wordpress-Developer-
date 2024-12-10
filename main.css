@@ -188,6 +188,81 @@ h3{
     background-size: cover;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    background-image: url(./assets/footerBg.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding: 200px 0 50px 0;
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ul li:first-child {
+    list-style: none; 
+}
+
+.footer-link{
+    text-decoration: none!important;
+    color: #FFF!important;
+}
+
+
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.form-container input[type="email"] {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #6a0dad; 
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #ccc; 
+}
+
+.form-container input[type="email"]::placeholder {
+    color: #666;
+    font-size: 40px;
+}
+
+.form-container button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    background: none;
+    border: 1px solid #666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #6a0dad; 
+    border-color: #6a0dad;
+}
+
+.form-container button i {
+    color: #ccc; 
+    font-size: 50px;
+}
+
+
+
 
 @media only screen and (max-width:1023px) {
     .large-logo{
