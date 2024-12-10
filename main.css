@@ -44,12 +44,11 @@ body{
 
 
 .section-introduction{
-    background-image: url(./assets/Ellipse\ 2827.svg);
-    background-position: center;
+    background-image: url(./assets/Ellipse\ 4.png);    
     min-height: 80vh;
-    background-size: contain;
+    padding: 80px 0 200px 0;    
+    background-position: bottom right;  
     background-repeat: no-repeat;
-    padding: 80px 0;    
 }
 
 .section-introduction .container:first-of-type{
@@ -57,6 +56,11 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-image: url(./assets/Ellipse\ 2827.svg);
+    background-position: bottom;    
+    background-size: contain;
+    background-repeat: no-repeat;
+
 }
 
 .hero-header{
@@ -67,6 +71,8 @@ body{
     font-weight: 600;
     font-size: 24px;
     padding-right: 168px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .section-introduction .hero-second-column{
@@ -74,12 +80,137 @@ body{
     padding-right: 68px;
 }
 
-@media only screen and (max-width:767px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.plan-price{
+    padding: 80px 0;
+}
+
+
+.plan-price h3{
+    text-align: center;
+    font-size: 80px;
+}
+
+.plan-sub-text{
+    text-align: center;
+    font-size: 18px;
+    padding: 0 350px;
+}
+
+.card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px!important;
+    border: none!important;
+    padding: 0!important;
+    border-radius: 30px!important;
+}
+
+.card-title {
+    font-size: 21px!important;
+}
+
+.card-text{
+    font-size: 26px;
+}
+
+.card-text small{
+    font-size: 20px!important;
+}
+
+
+.card-header {
+    background-color: #fff!important;
+    border-bottom: none!important;
+    border-radius: 30px 30px 0 0!important;
+}
+
+.card-footer {
+    background-color: #FFF!important;
+    border-top: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0 0 30px 30px !important;
+}
+
+.card-body{
+    color: #000000!important;
+}
+
+.card-body i{
+    color: #12B76A!important;
+}
+
+.card-body .bi-check::before {
+    background: #D1FADF;
+    border-radius: 50%;
+}
+
+.plan-price-second-column .card-header{
+    background: linear-gradient(90deg, #DE35FF 0%, #3A65FF 64%, #16F1FF 100%)!important;
+    border-radius: 30px 30px 0 0!important;
+}
+
+
+@media only screen and (max-width:1023px) {
     .large-logo{
         display: block!important;
     }
     .mobile-logo{
         display: none!important;
     }
+    .section-introduction{
+        min-height: 50vh;
+        padding: 80px 0;
+        background-image: none!important;    
+    }
+    .section-introduction .container:first-of-type{
+        height: 50vh;
+    }
+    .hero-header{
+        font-size: 40px;
+        text-align: center;
+    }
+    .section-introduction .hero-first-column{
+        font-size: 20px;
+        text-align: center;
+        padding-right: 0px;
+    }
     
+    .section-introduction .hero-second-column{
+        font-size: 20px;
+        text-align: center;
+        padding-right: 0;
+    }
+    
+}
+
+@media only screen and (max-width:767px) {
+
+    .section-introduction .hero-first-column{
+        font-size: 18px;
+    }
+    
+    .section-introduction .hero-second-column{
+        font-size: 16px;
+    }
+
 }
