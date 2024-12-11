@@ -28,15 +28,24 @@
                     <a class="navbar-brand mobile-logo" href="#">
                         <img src="./assets/logo.png" alt="Company Logo">
                     </a>                
-                    <ul class="navbar-nav mb-2 mb-lg-0 gap-5">
+                    <ul class="navbar-nav mb-2 mb-lg-0 gap-3 d-flex align-items-center">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="seperator-icon">
+                            <i class="bi bi-circle-fill"></i>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Solutions</a>
                         </li>
+                        <li class="seperator-icon">
+                            <i class="bi bi-circle-fill"></i>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="seperator-icon">
+                            <i class="bi bi-circle-fill"></i>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Resources</a>
@@ -89,20 +98,25 @@
       <section class="features-section">
         <div class="container features-container">
             <div class="row">
-                <div class="col-lg-6 col-sm-12">                    
+                <div class="col-lg-6 col-sm-12 mb-5">
                     <h3>Rapidly changing tech landscape</h3>
-
+                </div>
+            </div>            
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">                  
+                    
 
                     <table class="timeline-table">
                         <tbody>
                           <!-- Step 1 -->
                           <tr>
                             <td class="step-number active">01</td>
-                            <td class="vertical-line">
-                              <div class="line active"></div>
+                            <td class="vertical-line" rowspan="3">
+                              <div class="line"></div>
                             </td>
                             <td class="timeline-content">
-                              <h3 class="step-title active">Data Collection & Analysis</h3>
+                              <img src="./assets/ecomBox.png" alt="">
+                              <h3 class="step-title active mt-3 mb-3">Data Collection & Analysis</h3>
                               <p class="step-description">Our AI systems gather and process data from various sources, ensuring a comprehensive understanding.</p>
                             </td>
                           </tr>
@@ -110,11 +124,12 @@
                           <!-- Step 2 -->
                           <tr>
                             <td class="step-number">02</td>
-                            <td class="vertical-line">
+                            <!-- <td class="vertical-line">
                               <div class="line"></div>
-                            </td>
+                            </td> -->
                             <td class="timeline-content">
-                              <h3 class="step-title">Deployment and Monitoring</h3>
+                              <img src="./assets/sailboat.png" alt="">
+                              <h3 class="step-title mt-3 mb-3">Deployment and Monitoring</h3>
                               <p class="step-description">The solution is deployed to seamlessly integrate into your existing systems, with ongoing monitoring to optimize performance.</p>
                             </td>
                           </tr>
@@ -122,11 +137,12 @@
                           <!-- Step 3 -->
                           <tr>
                             <td class="step-number">03</td>
-                            <td class="vertical-line">
+                            <!-- <td class="vertical-line">
                               <div class="line"></div>
-                            </td>
+                            </td> -->
                             <td class="timeline-content">
-                              <h3 class="step-title">Insights and Reporting</h3>
+                              <img src="./assets/file folder approved-2.png" alt="">
+                              <h3 class="step-title mt-3 mb-3">Insights and Reporting</h3>
                               <p class="step-description">Receive in-depth analytics and reports to track performance and gain visibility into all AI-driven processes.</p>
                             </td>
                           </tr>
@@ -137,8 +153,8 @@
 
                     
                 </div>
-                <div class="col-lg-6 col-sm-12">
-
+                <div class="col-lg-6 col-sm-12 features-second-col-image">
+                    <img src="./assets/Group 1171275313.png" alt="">
                 </div>
             </div>
         </div>     
@@ -222,18 +238,30 @@
      <!-- Footer Starts -->
       <footer>
         <div class="container d-flex flex-column">
-            <ul class="footer-nav mt-2 mt-lg-0 gap-5 order-2 order-md-1">
+            <ul class="footer-nav mt-2 mt-lg-0 gap-5 order-2 order-md-1 d-flex align-items-center">
                 <li class="footer-nav-item">
                     <a class="footer-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="seperator-icon-footer">
+                    <i class="bi bi-circle-fill"></i>
                 </li>
                 <li class="footer-nav-item">
                     <a class="footer-link" href="#">Solutions</a>
                 </li>
+                <li class="seperator-icon-footer">
+                    <i class="bi bi-circle-fill"></i>
+                </li>
                 <li class="footer-nav-item">
                     <a class="footer-link" href="#">about</a>
                 </li>
+                <li class="seperator-icon-footer">
+                    <i class="bi bi-circle-fill"></i>
+                </li>
                 <li class="footer-nav-item">
                     <a class="footer-link" href="#">Resources</a>
+                </li>
+                <li class="seperator-icon-footer">
+                    <i class="bi bi-circle-fill"></i>
                 </li>
                 <li class="footer-nav-item">
                     <a class="footer-link" href="#">Contact Us</a>
@@ -242,7 +270,7 @@
             <div class="container d-flex justify-content-center mt-3 order-1 order-md-2">
                 <img src="./assets/footer-logo.png" alt="">                
             </div>
-            <p class="plan-sub-text text-light mt-3 order-3 order-md-3">Our AI models learn and improve over time, delivering increasingly accurate results
+            <p class="footer-text mt-3 order-3 order-md-3">Our AI models learn and improve over time, delivering increasingly accurate results
                  and adapting to changing trends.
             </p>
 
